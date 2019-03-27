@@ -536,9 +536,8 @@ var matrix = [
 ];
 var hostile = new Host(10, 10)
 
-var side = 20;
-var p = 0,
-    q = 0;
+var side = 60;
+var p = 0, q = 0;
 var HostHealth = 255;
 var k = HostHealth;
 var fr = 3;
