@@ -536,7 +536,7 @@ var matrix = [
 ];
 var hostile = new Host(10, 10)
 
-var side = 60;
+var side = 50;
 var p = 0, q = 0;
 var HostHealth = 255;
 var k = HostHealth;
@@ -765,14 +765,18 @@ function draw() {
         }
     }
     for (var i in trees) {
-        stroke("violet")
-        noFill();
-        circle(trees[i].x * side + side / 2, trees[i].y * side + side / 2, (treesM - 4) % 10 * 5);
-        circle(trees[i].x * side + side / 2, trees[i].y * side + side / 2, (treesM - 2) % 10 * 5);
-        circle(trees[i].x * side + side / 2, trees[i].y * side + side / 2, treesM % 10 * 5);
-        if (treesM == 9) treesM = 3;
-        treesM++;
-        stroke("green")
+        if (!vol && !ts) {
+            stroke("violet")
+            noFill();
+            circle(trees[i].x * side + side / 2, trees[i].y * side + side / 2, (treesM - 4) % 10 * 5);
+            circle(trees[i].x * side + side / 2, trees[i].y * side + side / 2, (treesM - 2) % 10 * 5);
+            circle(trees[i].x * side + side / 2, trees[i].y * side + side / 2, treesM % 10 * 5);
+            if (treesM == 9) treesM = 3;
+            treesM++;
+            stroke("green")
+        }
+        
+       
 
     }
     for (var i in immos) {
@@ -787,11 +791,11 @@ function draw() {
             if (matrix[y][x] == 7) {
                 if (vol == true) {
                     if (matrix[y - 1][x] == 8 || matrix[y - 1][x] == 9)
-                        matrix[y - 1][x] = 9
+                        matrix[y - 1][x] = 7
                     else matrix[y - 1][x] = 7
 
                     if (matrix[y][x - 1] == 8 || matrix[y - 1][x] == 9)
-                        matrix[y][x - 1] = 9
+                        matrix[y][x - 1] = 7
                     else matrix[y][x - 1] = 7
                 }
             }

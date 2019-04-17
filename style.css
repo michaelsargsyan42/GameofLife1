@@ -1,5 +1,5 @@
 #test {
-    margin-left: 10%;
+    margin-left: 20%;
 border: 5px double #3ed19b;
 }
 * {
@@ -29,6 +29,104 @@ h1, h2 {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+#summer {
+    background-color: #ededed; 
+    color: black;
+    border-radius: 12px;
+    padding: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-bottom: 5px;
+    
+}
+#summer:hover {
+    background-color: #00ff08; /* Green */
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 120%;
+    padding: 10px;
+}
+#winter {
+    background-color:#ededed; 
+    color: black;
+    border-radius: 12px;
+    padding: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-bottom: 5px;
+    
+}
+#winter:hover {
+    background-color: lightblue; /* Green */
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    font-size: 120%;
+    padding: 10px;
+}
+#tsunami {
+    background-color:#ededed; 
+    color: black;
+    border-radius: 12px;
+    padding: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-bottom: 5px;
+    
+}
+#tsunami:hover {
+    background-color: aqua; /* Green */
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    font-size: 120%;
+    padding: 10px;
+}
+#volcano {
+    background-color:#ededed; 
+    color: black;
+    border-radius: 12px;
+    padding: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-bottom: 5px;
+    
+}
+#volcano:hover {
+    background-color: orange; /* Green */
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+    font-size: 120%;
+    padding: 10px;
+}
+
+
+  .bg-tex2 {
+   
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    position: absolute;
+    top: 60%;
+    left: 180px;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
